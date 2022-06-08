@@ -10,4 +10,6 @@ debug = DebugToolbarExtension(app)
 
 @app.get('/')
 def questions():
-    return render_template('questions.html')
+    prompts = silly_story.prompts
+
+    return render_template('questions.html', prompts=prompts)
