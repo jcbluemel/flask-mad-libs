@@ -1,0 +1,25 @@
+body {
+    font-size: 150%;
+}
+
+body, h1, h2, button {
+    font-family: 'Gochi Hand', cursive !important;
+}
+
+body {
+    background-color: #78C2AD;
+}
+
+input {
+    font-size: 100% !important;
+}
+
+div.container-fluid {
+    max-width: 400px;
+}
+
+main {
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 8px 8px 13px #58A29D;
+}
