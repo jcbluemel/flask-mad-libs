@@ -20,7 +20,7 @@ def questions():
 def results():
     """Render story page html, fill with completed story from Story.generate"""
 
-    prompts_to_libs = request.args.to_dict()
+    prompts_to_libs = request.args
     story = silly_story.generate(prompts_to_libs)
 
     return render_template('story.html', story=story)
