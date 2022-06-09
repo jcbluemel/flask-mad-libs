@@ -6,16 +6,16 @@
 
   <h1 class="pt-4 mb-3 text-center">Madlibs!</h1>
 
-  <form action="story" class="pb-4">
+  <form action="results" class="pb-4">
 
     {% for prompt in prompts %}
     <div class="mb-3 row">
       <label class="col-5 col-form-label text-end">{{ prompt }}</label>
       <div class="col-7">
         <input
-            name=`{{ prompt }}`
+            name={{ prompt }}
             required
-            aria-label=`{{ prompt }}`
+            aria-label={{ prompt }}
             class="form-control">
       </div>
     </div>
